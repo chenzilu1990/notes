@@ -1,33 +1,38 @@
 
+## Mac下的常用快捷键
 
-## Window下的快捷键
+注意点：
+```
+有些快捷键焦点不在文件中，才可以。
+```
 
-### Core
-| 名称 | 快捷键  |
-| :----| :---- |
-| 全屏 | F11 |
-| 全屏2 | F12 |
-
-| 名称 | 快捷键 |
+| 名称  | 快捷键 |
 | :--- | :--- |
-| test1 | test1-1 |
-| test2 | test2-2 |
-
-
-
-
-### Tree View
-
-### Markdown Preview
-
-### Open On GitHub
-
-### Git Diff
-
-### Notifications
-
-### Find And Replace
-
-### Snippets
-
-### Image View
+| 跳至文件第一行前 | cmd + 箭头上 |
+| 跳至文件最后一行后 | cmd + 箭头下 |
+| 复制一行到下一行 | cmd + shift + d |
+| 注释 | cmd + / |
+| 调整字体大小 | cmd + -或+或0【减小-，增大+，归位0】|
+| 实时预览Markdown效果 | ctrl + shift + m|
+| 关闭一个页签 | cmd + w |
+| 删除并复制一行 | cmd + x |
+| 删除一个标签内的所有内容 | ctrl + d |
+| 后退前进操作 | cmd + z 与 cmd + y |
+| 搜索与替换 | cmd + f 与 cmd + alt + f |
+| 搜索文件名 | cmd + p |
+| 调出命令 | cmd + shift + p |
+| 显示关闭左侧菜单 | cmd + \| |
+| 创建新文件 | a |
+| 复制文件并重新生成一份 | d |
+| 菜单缩起与展开 | h与l |
+| 切换打开的选项卡 | cmd + b |
+| 搜索结果下一个 | cmd + g |
+| 去除行尾的空格与回国 | cmd + j |
+| 显示节点 | cmd + r |
+| 全项目搜索 | cmd + shift + f |
+| 切换选项卡 | cmd + n 【n为选项卡位置】|
+| 全屏 | cmd + ctrl + f |
+| 移动到上一行与移动到下一行 | cmd + ctrl + 箭头上或下|
+| 移动到第n行 | ctrl + g |
+| 保存所有 | cmd + alt + s |
+| 表情包 | cmd + ctrl + space |
