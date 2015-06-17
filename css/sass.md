@@ -14,13 +14,39 @@ export PATH=/usr/local/bin:$PATH
 ruby --version
 ```
 - 安装SASS
-```shell
+```bash
 gem install sass
 ```
 
 - 使用
+```bash
+1 sass test.scss
+2 sass test.scss test.css
+3 sass --style compressed test.sass test.css
 ```
+
+- 监听使用
+```bash
+// watch a file
+sass --watch input.scss:output.css
+
+// watch a directory
+sass --watch app/sass:public/stylesheets
 ```
+
+- 在线转换器
+[在线转换器](http://sassmeister.com/)
+
+- SASS编译风格
+
+> nested: 嵌套缩进的css代码，它是默认值
+
+> expanded: 没有缩进的、扩展的css代码
+
+> compact: 简洁格式的css代码
+
+> compressed: 压缩后的css代码
+
 ## 二、基本用法
 
 > **变量**
@@ -187,6 +213,12 @@ a {
 ```
 
 ## 继承
+
+> 简单选择器的继承
+
+<code>.serious-error</code>继承<code>.error</code>
+以class="serious-error"修饰的html，最终展示的效果是class="serious-error error"
+
 ```sass
 .error {
     border: 1px solid red;
@@ -197,6 +229,20 @@ a {
     border-width: 3px;
 }
 ```
+
+> 一条样式继承复杂选择器
+
+<code>.serious-error</code> <code>@extend</code> <code>.important.error</code>
+
+<code>.important.error</code> 和 <code>h1.important.error</code>的样式都会被<code>.serious-error</code>继承
+
+<code>.important</code> 和 <code>.error</code>的样式不会被<code>.serious-error</code>继承
+
+> 完全命中才继承
+
+<code>( #main .serious-error)</code> <code>@extend</code> <code>.error</code>
+
+<code>#main .error</code>这种选择器是不能被继承的
 
 ## 高级用法
 
