@@ -268,7 +268,15 @@ p {
 
 - @for循环
 ```sass
+// 第一种方式包括end
 @for $i from 1 to 10 {
+    .border-#{$i} {
+        border: #{$i}px solid blue;
+    }
+}
+
+// 第二种方式不包括end
+@for $i from 1 through 10 {
     .border-#{$i} {
         border: #{$i}px solid blue;
     }
