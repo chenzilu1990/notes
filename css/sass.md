@@ -1,4 +1,26 @@
 ## 一、安装和使用
+
+
+- 安装Ruby
+```bash
+// MAC下的安装方式
+brew install ruby
+vim ~/.bash_profile
+
+// 如果是安装到/usr/local/bin下，且这个还没配置的话
+export PATH=/usr/local/bin:$PATH
+
+// 检测ruby是否安装成功
+ruby --version
+```
+- 安装SASS
+```shell
+gem install sass
+```
+
+- 使用
+```
+```
 ## 二、基本用法
 
 > **变量**
@@ -226,3 +248,7 @@ $i: 6;
     width: double(5px);
 }
 ```
+
+
+
+
