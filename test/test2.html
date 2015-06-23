@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+    // var add = function (){
+    //     var nSum = 0;
+    //     function sum(n){
+    //         nSum += n;
+    //         return sum;
+    //     }
+    //     sum.toString = sum.valueOf = function(){
+    //         return nSum;
+    //     }
+    //     return sum;
+    // }();
+    function add(x,y){
+        var oldx = x, oldy = y;
+        if(typeof y === 'undefined'){
+            return function (newy){
+                return oldx + newy;
+            }
+        }
+        return x + y;
+    }
+    // function add(x,y){
+    //     var oldX = x, oldY = y;
+    //     if(typeof oldY === 'undefined'){
+    //         return function(newY){
+    //             return oldX + newY;
+    //         }
+    //     }
+    //     return x + y;
+    // }
+    // console.log(add(1,2));
+    console.log(add(10));
+    // typeof add(5)
+    // console.log(add(3)(4)
+</script>
+</body>
+</html>

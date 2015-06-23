@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <video id="videoFull" src="1.mp4" controls="controls"  onclick="fullScreen();"  loop="loop">
+                你的版本太低，请下载高版本的浏览器观看视频
+    <video>
+
+
+23
+    <script>
+
+    function fullScreen() {
+        // var docElm = document.documentElement;
+        var docElm = document.getElementById("videoFull");
+        //W3C
+        if (docElm.requestFullscreen) {
+            docElm.requestFullscreen();
+        }
+        //FireFox
+        else if (docElm.mozRequestFullScreen) {
+            docElm.mozRequestFullScreen();
+        }
+        //Chrome等
+        else if (docElm.webkitRequestFullScreen) {
+            docElm.webkitRequestFullScreen();
+        }
+        //IE11
+        else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+        }
+    }
+
+
+    </script>
+</body>
+</html>
