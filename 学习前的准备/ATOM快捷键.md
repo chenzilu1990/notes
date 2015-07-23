@@ -36,3 +36,6 @@
 | 移动到第n行 | ctrl + g |
 | 保存所有 | cmd + alt + s |
 | 表情包 | cmd + ctrl + space |
+
+## 工具
+
